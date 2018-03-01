@@ -1,0 +1,2 @@
+bootargs=console=ttyPS0,115200n8 root=/dev/ram0 ramdisk_size=32768 rw earlyprintk
+uenvcmd=load mmc 0 0x2000000 image.ub && bootm 0x2000000
