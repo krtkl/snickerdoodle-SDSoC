@@ -154,7 +154,7 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
 set obj [get_filesets sources_1]
 # Import local files from the original project
 set files [list \
- "[file normalize "$origin_dir/snickerdoodle_black/snickerdoodle_black.srcs/sources_1/bd/base/hdl/base_wrapper.v"]"\
+ "[file normalize "$origin_dir/base_wrapper.v"]"\
 ]
 set imported_files [import_files -fileset sources_1 $files]
 
@@ -162,7 +162,7 @@ set imported_files [import_files -fileset sources_1 $files]
 # None
 
 # Set 'sources_1' fileset file properties for local files
-set file "hdl/base_wrapper.v"
+set file "base_wrapper.v"
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property -name "file_type" -value "Verilog" -objects $file_obj
 set_property -name "is_enabled" -value "1" -objects $file_obj

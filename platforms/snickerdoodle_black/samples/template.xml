@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest:Manifest xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:manifest="http://www.xilinx.com/manifest">
+   <template location="hello_world" name="hello_world" description="hello world on UART">
+      <supports>
+         <and>
+            <or>
+               <os name="Standalone"/>
+            </or>
+         </and>
+      </supports>
+   </template>
+</manifest:Manifest>
